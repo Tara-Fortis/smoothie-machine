@@ -8,13 +8,57 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="scripts.js" defer></script>
+    <script src="js/scripts.js" defer></script>
 </head>
 
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <h1>Smoothie Machine</h1>
+    </header>
+    <main>
+        <p>Use the form below to customize your own smoothie!</p>
+        <form action="index.html" method="get">
+            <details name="smoothie">
+                <summary>Milk</summary>
+                <fieldset>
+                    <input type="radio" name="milk" id="regular">
+                    <label for="regular">2% Milk</label>
+                    <input type="radio" name="milk" id="chocolate">
+                    <label for="chocolate">Chocolate Milk</label>
+                    <input type="radio" name="milk" id="oatmilk">
+                    <label for="oatmilk">Oatmilk</label>
+                </fieldset>
+            </details>
+            <details name="smoothie">
+                <summary>Add in</summary>
+                <fieldset>
+                    <input type="radio" name="add-in" id="strawberries">
+                    <label for="strawberries">Strawberries</label>
+                    <input type="radio" name="add-in" id="blueberries">
+                    <label for="blueberries">Blueberries</label>
+                    <input type="radio" name="add-in" id="protien">
+                    <label for="protien">Protein powder</label>
+                </fieldset>
+            </details>
+            <details name="smoothie">
+                <summary>Size</summary>
+                <fieldset>
+                    <input type="radio" name="size" id="small">
+                    <label for="small">Small</label>
+                    <input type="radio" name="size" id="medium">
+                    <label for="medium">Medium</label>
+                    <input type="radio" name="size" id="large">
+                    <label for="large">Large</label>
+                </fieldset>
+            </details>
+            <button type="submit">Order</button>
+            <button type="reset">Clear</button>
+        </form>
+        <section>
+            <p>Here's your order:</p>
+            <span id="smoothie-order"></span>
+        </section>
+    </main>
 </body>
 
 </html>

@@ -1,1 +1,7 @@
 @charset "UTF-8";
+h1 {
+    padding: 0 1em;
+}
+main {
+    padding: 0 2em;
+}

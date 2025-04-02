@@ -18,45 +18,58 @@
     <main>
         <p>Use the form below to customize your own smoothie!</p>
         <form action="index.html" method="get">
-            <details name="smoothie">
-                <summary>Milk</summary>
-                <fieldset>
-                    <input type="radio" name="milk" id="regular">
-                    <label for="regular">2% Milk</label>
-                    <input type="radio" name="milk" id="chocolate">
-                    <label for="chocolate">Chocolate Milk</label>
-                    <input type="radio" name="milk" id="oatmilk">
-                    <label for="oatmilk">Oatmilk</label>
-                </fieldset>
-            </details>
-            <details name="smoothie">
-                <summary>Add in</summary>
-                <fieldset>
-                    <input type="radio" name="add-in" id="strawberries">
-                    <label for="strawberries">Strawberries</label>
-                    <input type="radio" name="add-in" id="blueberries">
-                    <label for="blueberries">Blueberries</label>
-                    <input type="radio" name="add-in" id="protien">
-                    <label for="protien">Protein powder</label>
-                </fieldset>
-            </details>
-            <details name="smoothie">
-                <summary>Size</summary>
-                <fieldset>
-                    <input type="radio" name="size" id="small">
-                    <label for="small">Small</label>
-                    <input type="radio" name="size" id="medium">
-                    <label for="medium">Medium</label>
-                    <input type="radio" name="size" id="large">
-                    <label for="large">Large</label>
-                </fieldset>
-            </details>
+            <fieldset>
+                <h2>Milk</h2>
+                <input type="radio" name="milk" id="regular">
+                <label for="regular">2% Milk</label>
+                <input type="radio" name="milk" id="chocolate">
+                <label for="chocolate">Chocolate Milk</label>
+                <input type="radio" name="milk" id="oatmilk">
+                <label for="oatmilk">Oatmilk</label>
+                <input type="radio" name="milk" id="soymilk">
+                <label for="soymilk">Soy milk</label>
+                <input type="radio" name="milk" id="lactose">
+                <label for="lactose">Lactose-free milk</label>
+            </fieldset>
+            <fieldset>
+                <h2>Fruit</h2>
+                <input type="checkbox" id="strawberry">
+                <label for="strawberry">Strawberry</label>
+
+                <input type="checkbox" id="blueberry">
+                <label for="blueberry">Blueberry</label>
+
+                <input type="checkbox" id="mango">
+                <label for="mango">Mango</label>
+
+                <input type="checkbox" id="bananas">
+                <label for="bananas">Bananas</label>
+
+                <input type="checkbox" id="pineapple">
+                <label for="pineapple">Pineapple</label>
+            </fieldset>
+            <fieldset>
+                <h2>Ice</h2>
+                <input type="checkbox" id="ice">
+                <label for="ice">Ice</label>
+            </fieldset>
+            <fieldset>
+                <h2>Size</h2>
+                <input type="radio" name="size" id="small">
+                <label for="small">Small</label>
+
+                <input type="radio" name="size" id="medium">
+                <label for="medium">Medium</label>
+
+                <input type="radio" name="size" id="large">
+                <label for="large">Large</label>
+            </fieldset>
             <button type="submit">Order</button>
             <button type="reset">Clear</button>
         </form>
         <section>
             <p>Here's your order:</p>
-            <span id="smoothie-order"></span>
+            <div id="smoothie-order"></div>
         </section>
     </main>
 </body>

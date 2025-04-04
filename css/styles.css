@@ -1,24 +1,15 @@
 @charset "UTF-8";
-
-h1 {
-    padding: 0 1em;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+html {
+    box-sizing: border-box;
 }
-
-main {
-    padding: 0 2em;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
-
-fieldset {
-    border: none;
-}
-label, p {
-    font-size: 1.2em;
-}
-button {
-    margin: 1em 0.5em;
-    border: 2px solid hotpink;
-    border-radius: 0.5em;
-    background-color:blanchedalmond;
-    padding: 0.5em;
-    font-weight: bold;
+/*========== Content ==========*/
+body {
+    padding: 1em;
+    margin: 1em;
 }

@@ -14,16 +14,16 @@ class Smoothie {
 
     }
     drink = function () {
-        return `You have ordered a ${this.size} smoothie with ${this.milk}, ${this.fruit}, and ${this.ice}.`;
+        return `A ${this.size} smoothie with ${this.milk} milk, ${this.fruit}, and with ${this.ice}.`;
     }
 
 }
 // create a Smoothie Class Method
 function createSmoothie() {
-    // get the values from the form
-    let milk = document.querySelector('input[name="milk"]').value;
-    let fruit = document.querySelector('input[name="fruit"]').value;
-    let size = document.querySelector('input[name="size"]').value;
+    // get the output from the form
+    let milk = document.querySelector('input[name="milk"]:checked').value;
+    let fruit = document.querySelector('input[name="fruit"]:checked').value;
+    let size = document.querySelector('input[name="size"]:checked').value;
     let ice = document.querySelector('input[name="ice"]');
     let smoothieOrder = document.querySelector('#smoothieOrder');
     // if ice is checked, set ice to yes, else set ice to no

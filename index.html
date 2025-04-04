@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smoothie Machine</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js" defer></script>
@@ -16,36 +16,38 @@
         <h1>Smoothie Machine</h1>
     </header>
     <main>
-        <h2>Use the form below to customize your smoothie</h2>
+        <section>
+            <img src="images/sara-julie-9Gz5bMWdGYE-unsplash.jpg" alt="a mason jar with a purple smoothie">
+        </section>
         <form action="index.html" method="get">
             <fieldset>
                 <legend>Choose your milk</legend>
                 <input type="radio" name="milk" id="regular" value="regular">
-                <label for="regular">2% Milk</label>
+                <label for="regular">2% Milk</label><br>
                 <input type="radio" name="milk" id="chocolate" value="chocolate">
-                <label for="chocolate">Chocolate Milk</label>
-                <input type="radio" name="milk" id="oatmilk" value="oatmilk">
-                <label for="oatmilk">Oatmilk</label>
-                <input type="radio" name="milk" id="soymilk" value="soymilk">
-                <label for="soymilk">Soy milk</label>
-                <input type="radio" name="milk" id="lactose" value="lactose">
+                <label for="chocolate">Chocolate Milk</label><br>
+                <input type="radio" name="milk" id="oatmilk" value="oat">
+                <label for="oatmilk">Oatmilk</label> <br>
+                <input type="radio" name="milk" id="soymilk" value="soy">
+                <label for="soymilk">Soy milk</label><br>
+                <input type="radio" name="milk" id="lactose" value="lactose free">
                 <label for="lactose">Lactose-free milk</label>
             </fieldset>
             <fieldset>
                 <legend>Choose your fruit</legend>
                 <input type="radio" name="fruit" id="strawberry" value="strawberry">
-                <label for="strawberry">Strawberry</label>
+                <label for="strawberry">Strawberry</label><br>
 
                 <input type="radio" name="fruit" id="blueberry" value="blueberry">
-                <label for="blueberry">Blueberry</label>
+                <label for="blueberry">Blueberry</label><br>
 
                 <input type="radio" name="fruit" id="mango" value="mango">
-                <label for="mango">Mango</label>
+                <label for="mango">Mango</label><br>
 
                 <input type="radio" name="fruit" id="banana" value="banana">
-                <label for="banana">Banana</label>
+                <label for="banana">Banana</label><br>
 
-                <input type="radio"name="fruit"  id="pineapple" value="pineapple">
+                <input type="radio" name="fruit" id="pineapple" value="pineapple">
                 <label for="pineapple">Pineapple</label>
             </fieldset>
             <fieldset>
@@ -56,22 +58,22 @@
             <fieldset>
                 <legend>Choose your size</legend>
                 <input type="radio" name="size" id="small" value="small">
-                <label for="small">Small</label>
+                <label for="small">Small</label><br>
 
                 <input type="radio" name="size" id="medium" value="medium">
-                <label for="medium">Medium</label>
+                <label for="medium">Medium</label><br>
 
                 <input type="radio" name="size" id="large" value="large">
-                <label for="large">Large</label>
+                <label for="large">Large</label><br>
             </fieldset>
             <button type="submit">Order</button>
             <button type="reset">Clear</button>
-        <section>
-            <p>Here's your order:</p>
-            <div id="smoothieOrder"></div>
-        </section>
+    </form>
+            <section>
+                <p>Here's your order:</p>
+                <div id="smoothieOrder"></div>
+            </section>
     </main>
-        </form>
 </body>
 
 </html>
